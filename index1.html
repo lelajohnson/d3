@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+    <style>
+      body { margin:0;position:"fixed";top:0;right:0;bottom:0;left:0;}
+    </style>
+  </head>
+
+  <body>
+
+    <a-scene>
+      <a-entity
+        geometry="primitive: box;
+        width: 5;
+        height: 4;
+        depth: 5"
+        position="0 1 -5"
+        material="color: #fff"></a-entity>
+
+        <a-entity id="cube"></a-entity>
+
+
+      <a-light color="#da47da" position="0 0 0" type="ambient"></a-light>
+      <a-entity camera look-controls wasd-controls></a-entity>
+      <a-entity light="type: point; color: #EEE; intensity: 0.5" position="0 3 0"></a-entity>
+    <!-- Sky -->
+      <a-sky color="#c8f8e0"></a-sky>
+</a-scene>
+<script>
+
+    // fake data
+    var data = [ 10, 20, 30, 15, 25, 35, 40,
+                45, 50, 70, 100, 120, 130,
+               12, 18, 22, 29, 33, 44, 59, 200]
+
+    var scene = d3.select("a-scene")
+
+    var cubes = scene.selectAll("a-entity.bar").data(data)
+    cubes.enter().append("a-entity").classed("bar", true)
+    cubes.attr({
+      position: function(d,i) {
+        var x = 0;
+        var y = 0;
+        var z = -4;
+        return x + " " + y + " " + z
+      }
+    })
+  </script>
+  </body>
+</html>
