@@ -1,0 +1,236 @@
+{
+   "accessors" : [
+      {
+         "bufferView" : 0,
+         "byteOffset" : 0,
+         "componentType" : 5125,
+         "count" : 1278000,
+         "type" : "SCALAR"
+      },
+      {
+         "bufferView" : 1,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 1278000,
+         "type" : "VEC3"
+      },
+      {
+         "bufferView" : 2,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 1278000,
+         "type" : "VEC3"
+      },
+      {
+         "bufferView" : 3,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 1278000,
+         "type" : "VEC2"
+      },
+      {
+         "bufferView" : 4,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 2,
+         "type" : "SCALAR"
+      },
+      {
+         "bufferView" : 5,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 2,
+         "type" : "VEC4"
+      },
+      {
+         "bufferView" : 6,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 261,
+         "type" : "SCALAR"
+      },
+      {
+         "bufferView" : 7,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 261,
+         "type" : "VEC4"
+      },
+      {
+         "bufferView" : 8,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 261,
+         "type" : "VEC3"
+      }
+   ],
+   "animations" : [
+      {
+         "channels" : [
+            {
+               "sampler" : 0,
+               "target" : {
+                  "node" : 1,
+                  "path" : "rotation"
+               }
+            }
+         ],
+         "name" : "Coronavirus1|Coronavirus1Action",
+         "samplers" : [
+            {
+               "input" : 4,
+               "interpolation" : "LINEAR",
+               "output" : 5
+            }
+         ]
+      },
+      {
+         "channels" : [
+            {
+               "sampler" : 0,
+               "target" : {
+                  "node" : 1,
+                  "path" : "rotation"
+               }
+            },
+            {
+               "sampler" : 1,
+               "target" : {
+                  "node" : 1,
+                  "path" : "translation"
+               }
+            }
+         ],
+         "name" : "Coronavirus1|Coronavirus1Action.002",
+         "samplers" : [
+            {
+               "input" : 6,
+               "interpolation" : "LINEAR",
+               "output" : 7
+            },
+            {
+               "input" : 6,
+               "interpolation" : "LINEAR",
+               "output" : 8
+            }
+         ]
+      }
+   ],
+   "asset" : {
+      "version" : "2.0"
+   },
+   "bufferViews" : [
+      {
+         "buffer" : 0,
+         "byteLength" : 5112000,
+         "byteOffset" : 0
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 15336000,
+         "byteOffset" : 5112000
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 15336000,
+         "byteOffset" : 20448000
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 10224000,
+         "byteOffset" : 35784000
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 8,
+         "byteOffset" : 46008000,
+         "byteStride" : 4
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 32,
+         "byteOffset" : 46008008,
+         "byteStride" : 16
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 1044,
+         "byteOffset" : 46008040,
+         "byteStride" : 4
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 4176,
+         "byteOffset" : 46009084,
+         "byteStride" : 16
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 3132,
+         "byteOffset" : 46013260,
+         "byteStride" : 12
+      }
+   ],
+   "buffers" : [
+      {
+         "byteLength" : 46016392,
+         "uri" : "model.bin"
+      }
+   ],
+   "materials" : [
+      {
+         "name" : "Default OBJ",
+         "pbrMetallicRoughness" : {
+            "baseColorFactor" : [ 0.800000011920929, 0.800000011920929, 0.800000011920929, 1 ]
+         }
+      }
+   ],
+   "meshes" : [
+      {
+         "primitives" : [
+            {
+               "attributes" : {
+                  "NORMAL" : 2,
+                  "POSITION" : 1,
+                  "TEXCOORD_0" : 3
+               },
+               "indices" : 0,
+               "material" : 0,
+               "mode" : 4
+            }
+         ]
+      }
+   ],
+   "nodes" : [
+      {
+         "children" : [ 1 ],
+         "name" : "RootNode",
+         "rotation" : [ 0, 0, 0, 1 ],
+         "scale" : [ 1, 1, 1 ],
+         "translation" : [ 0, 0, 0 ]
+      },
+      {
+         "children" : [ 2 ],
+         "name" : "Coronavirus1",
+         "rotation" : [
+            -0.09500248776592171,
+            0.7871217602914926,
+            -0.07302685562269108,
+            0.6050462297641153
+         ],
+         "scale" : [ 0.9999999237060547, 0.9999999237060548, 1.000000076293945 ],
+         "translation" : [ 0, 0, 0 ]
+      },
+      {
+         "mesh" : 0,
+         "rotation" : [ 0, 0, 0, 1 ],
+         "scale" : [ 1, 1, 1 ],
+         "translation" : [ 0, 0, 0 ]
+      }
+   ],
+   "scenes" : [
+      {
+         "nodes" : [ 0 ]
+      }
+   ]
+}
